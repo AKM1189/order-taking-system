@@ -1,0 +1,45 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.search-bar{
+    border: none;
+    /* outline: none; */
+    background: transparent;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.search-bar:focus{
+    border-bottom: 1px solid red;
+}
+
+
+.form-control:focus, .form-select:focus{
+    border-color: #ff716c !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 86, 86, 0.493) !important;
+}
+#navbar-search-input:focus{
+    box-shadow: none !important;
+}
+
+.username{
+    white-space: nowrap; 
+    max-width: 100px !important; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+.table-bordered>:not(caption)>*>* {
+border-width: var(--bs-border-width) !important;
+}
+
+.content-wrapper{
+    /* padding: 10px !important; */
+}
+
